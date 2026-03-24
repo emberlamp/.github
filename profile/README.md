@@ -19,4 +19,4 @@ Emberlamp is an organization dedicated to TypeScript development and building to
 
 For inquiries, please reach out through GitHub.
 
-© 2025 Emberlamp
+© 2026 Emberlamp
