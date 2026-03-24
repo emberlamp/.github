@@ -20,6 +20,9 @@ Emberlamp is an organization dedicated to TypeScript development and building to
 - [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) - Pin repositories via CLI (API research included)
 - [config](https://github.com/emberlamp/config) - Centralized config management for extensions
 
+### Automation
+- [bot](https://github.com/emberlamp/bot) - Automation bot for organization management
+
 ### Shared Resources
 - [license](https://github.com/emberlamp/license) - Shared MIT license
 - [warnings](https://github.com/emberlamp/warnings) - Warning messages for slash commands
