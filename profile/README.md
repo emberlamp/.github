@@ -1,39 +1,87 @@
-# Emberlamp
+# Emberlamp Organization
 
-Your TypeScript community.
+🤖 Fully automated software engineering organization with centralized control.
 
 ## Overview
 
-Emberlamp is an organization dedicated to TypeScript development and building tools for developers.
+Emberlamp is a fully automated organization with 14 repositories managed through a centralized system.
 
-## Repositories
+## Architecture
+
+```
+                    ┌─────────────┐
+                    │   config    │
+                    │ repos.json  │
+                    └──────┬──────┘
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+        ▼                  ▼                  ▼
+   ┌─────────┐      ┌──────────┐      ┌─────────┐
+   │  skills │      │swe-agent │      │   bot   │
+   │   repo  │      │   repo   │      │   repo  │
+   └────┬────┘      └────┬─────┘      └────┬────┘
+        │                │                  │
+        └────────────────┴──────────────────┘
+                         │
+                         ▼
+              ┌─────────────────────┐
+              │        hub         │
+              │   (central entry)  │
+              └─────────────────────┘
+```
+
+## Repositories (14)
+
+### Central Control
+| Repo | Purpose |
+|------|---------|
+| [hub](https://github.com/emberlamp/hub) | Central hub with architecture |
+| [config](https://github.com/emberlamp/config) | Single source of truth (repos.json) |
+| [skills](https://github.com/emberlamp/skills) | Agent capabilities & CLI extensions |
+| [swe-agent](https://github.com/emberlamp/swe-agent) | Software engineering agent |
+| [bot](https://github.com/emberlamp/bot) | Automation workflows |
 
 ### Applications
-- [general](https://github.com/emberlamp/general) - A curated visual experience
+| Repo | Purpose |
+|------|---------|
+| [general](https://github.com/emberlamp/general) | Main application |
 
 ### Templates
-- [react-template](https://github.com/emberlamp/react-template) - React UI template with Vite, TypeScript, Tailwind CSS
-- [swe-agent](https://github.com/emberlamp/swe-agent) - Software engineering agent template
+| Repo | Purpose |
+|------|---------|
+| [react-template](https://github.com/emberlamp/react-template) | React + Vite + TypeScript |
 
-### CLI Extensions
-- [cli](https://github.com/emberlamp/cli) - Master CLI to control all repos
-- [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) - Pin repositories via CLI (API research included)
-- [config](https://github.com/emberlamp/config) - Centralized config management for extensions
+### CLI Tools
+| Repo | Purpose |
+|------|---------|
+| [cli](https://github.com/emberlamp/cli) | Master CLI for all repos |
+| [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) | CLI for pinning repos |
 
-### Automation
-- [bot](https://github.com/emberlamp/bot) - Automation bot for organization management
+### Resources
+| Repo | Purpose |
+|------|---------|
+| [license](https://github.com/emberlamp/license) | MIT License |
+| [warnings](https://github.com/emberlamp/warnings) | Warning messages |
+| [json-repo](https://github.com/emberlamp/json-repo) | JSON schemas |
+| [gitkeep](https://github.com/emberlamp/gitkeep) | Placeholder |
 
-### Shared Resources
-- [license](https://github.com/emberlamp/license) - Shared MIT license
-- [warnings](https://github.com/emberlamp/warnings) - Warning messages for slash commands
-- [json-repo](https://github.com/emberlamp/json-repo) - JSON schemas and templates
-- [gitkeep](https://github.com/emberlamp/gitkeep) - Meta placeholder
+## Automated System
 
-### Organization
-- [.github](https://github.com/emberlamp/.github) - Organization profile
+Each repo has 3 workflows: **CI**, **Release**, **Automation**
+
+### Release Automation
+- `feat:` commits → minor version bump
+- `fix:` commits → patch version bump
+
+## Quick Links
+
+- [Hub](https://github.com/emberlamp/hub) - Start here
+- [Config](https://github.com/emberlamp/config) - Repository list
+- [Bot](https://github.com/emberlamp/bot) - Automation
 
 ## Contact
 
-For inquiries, please reach out through GitHub.
+For inquiries, reach out through GitHub.
 
 © 2026 Emberlamp
