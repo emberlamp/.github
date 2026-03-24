@@ -86,6 +86,8 @@ All repos are defined in `config/repos.json`:
    - `feat:` for new features (triggers minor release)
    - `fix:` for bug fixes (triggers patch release)
 
+---
+
 ## Summary: How We Control All Repos
 
 ### Centralized System
