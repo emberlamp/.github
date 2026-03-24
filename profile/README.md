@@ -13,6 +13,7 @@ Emberlamp is an organization dedicated to TypeScript development and building to
 
 ### Templates
 - [react-template](https://github.com/emberlamp/react-template) - React UI template with Vite, TypeScript, Tailwind CSS
+- [swe-agent](https://github.com/emberlamp/swe-agent) - Software engineering agent template
 
 ### CLI Extensions
 - [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) - Pin repositories via CLI (API research included)
