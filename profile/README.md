@@ -16,6 +16,7 @@ Emberlamp is an organization dedicated to TypeScript development and building to
 - [swe-agent](https://github.com/emberlamp/swe-agent) - Software engineering agent template
 
 ### CLI Extensions
+- [cli](https://github.com/emberlamp/cli) - Master CLI to control all repos
 - [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) - Pin repositories via CLI (API research included)
 - [config](https://github.com/emberlamp/config) - Centralized config management for extensions
 
