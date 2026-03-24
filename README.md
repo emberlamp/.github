@@ -86,4 +86,45 @@ All repos are defined in `config/repos.json`:
    - `feat:` for new features (triggers minor release)
    - `fix:` for bug fixes (triggers patch release)
 
+## Summary: How We Control All Repos
+
+### Centralized System
+
+| Component | Purpose |
+|-----------|---------|
+| config/repos.json | Single source of truth for all 13 repos |
+| skills repo | Agent capabilities and CLI extensions |
+| swe-agent | Agent that knows all repos, can clone to /tmp |
+| bot repo | Automation workflow for syncing/reporting |
+
+### Automated Workflows
+
+| Workflow | Trigger | Action |
+|----------|---------|--------|
+| CI | push to main | Lint & test |
+| Release | push to main | Auto version bump, create tag & release |
+| Automation | schedule/manual | Sync repos, backup, report |
+
+### How It Works
+
+1. Add a repo → Update config/repos.json
+2. Code change → CI runs, then Release creates version bump + release
+3. Need agent skills → Add to skills repo
+4. Need automation → Use bot workflow
+
+### Commands
+
+```bash
+# Clone all repos
+python /tmp/swe-agent/agent.py clone-all
+
+# List all repos
+python /tmp/swe-agent/agent.py list
+
+# Trigger release manually
+gh workflow run release.yml -f version=minor -R emberlamp/repo
+```
+
+The entire emberlamp organization is now automated end-to-end!
+
 © 2026 Emberlamp
