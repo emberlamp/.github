@@ -84,8 +84,8 @@ jobs:
           NEW_TAG="v${MAJOR}.${MINOR}.${PATCH}"
           echo "NEW_TAG=$NEW_TAG" >> $GITHUB_OUTPUT
           echo "Creating tag: $NEW_TAG"
-          git tag $NEW_TAG
-          git push origin $NEW_TAG
+          git tag -f $NEW_TAG
+          git push -f origin $NEW_TAG
 
       - name: Generate release notes
         if: steps.version.outputs.bump != 'none'
@@ -126,11 +126,14 @@ jobs:
           TAG=$(git describe --tags --abbrev=0)
           echo "Creating release for tag: $TAG"
           
-          # Get release notes content
-          body=$(cat release_notes.md)
-          
-          # Create release using gh cli
-          gh release create "$TAG" --title "Release $TAG" --notes-file release_notes.md --draft=false
+          # Check if release already exists
+          if gh release view "$TAG" --repo "${{ github.repository }}" >/dev/null 2>&1; then
+            echo "Release $TAG already exists, updating..."
+            gh release edit "$TAG" --notes-file release_notes.md --draft=false
+          else
+            # Create release using gh cli
+            gh release create "$TAG" --title "Release $TAG" --notes-file release_notes.md --draft=false
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
