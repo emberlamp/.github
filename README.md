@@ -4,7 +4,7 @@ Automated software engineering organization with centralized control.
 
 ## Overview
 
-Emberlamp is a fully automated organization with 13 repositories managed through a centralized system.
+Emberlamp is a fully automated organization with 14 repositories managed through a centralized system.
 
 ## Architecture
 
@@ -94,7 +94,7 @@ All repos are defined in `config/repos.json`:
 
 | Component | Purpose |
 |-----------|---------|
-| config/repos.json | Single source of truth for all 13 repos |
+| config/repos.json | Single source of truth for all 14 repos |
 | skills repo | Agent capabilities and CLI extensions |
 | swe-agent | Agent that knows all repos, can clone to /tmp |
 | bot repo | Automation workflow for syncing/reporting |
