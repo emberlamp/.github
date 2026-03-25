@@ -69,7 +69,7 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 
 ## 🤖 Automated System
 
-Each repo has 3 workflows: **CI**, **Release**, **Automation**
+Each repo has 5 workflows: **CI**, **Release**, **Automation**, **Label PRs**, **Emberlamp Auto Bot**
 
 ### 🚀 Release Automation
 - `feat:` commits → minor version bump
