@@ -29,13 +29,15 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 
 ### Workflows
 
-Each repo has 3 automated workflows:
+Each repo has 5 workflows:
 
 | Workflow | Trigger | Purpose |
 |----------|---------|---------|
 | **CI** | push to main | Lint & test |
 | **Release** | push to main | Auto version bump & GitHub release |
 | **Automation** | schedule/manual | Sync, backup, report |
+| **Label PRs** | PR opened/synced | Auto-label PRs based on files |
+| **Emberlamp Auto Bot** | daily/manual | Daily sync and org management |
 
 ### Release Automation
 
