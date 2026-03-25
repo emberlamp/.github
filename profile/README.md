@@ -2,6 +2,10 @@
 
 ✨ Fully automated software engineering organization with centralized control.
 
+[![Release](https://img.shields.io/github/v/release/emberlamp/general?include_prereleases&label=latest)](https://github.com/emberlamp/general/releases/latest)
+![Repositories](https://img.shields.io/github/repo-count/emberlamp?label=repos)
+![GitHub Org](https://img.shields.io/github/organizations/emberlamp?label=org)
+
 ## Overview
 
 Emberlamp is a fully automated organization with 14 repositories managed through a centralized system.
@@ -76,6 +80,7 @@ Each repo has 3 workflows: **CI**, **Release**, **Automation**
 - [Hub](https://github.com/emberlamp/hub) - Start here
 - [Config](https://github.com/emberlamp/config) - Repository list
 - [Bot](https://github.com/emberlamp/bot) - Automation
+- [Releases](https://github.com/emberlamp/general/releases) - Latest releases
 
 ## Contact
 
