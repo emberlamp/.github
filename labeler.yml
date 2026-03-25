@@ -1,0 +1,63 @@
+# Labeler configuration for emberlamp repos
+
+# UI/Frontend labels
+frontend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'src/**'
+          - '*.tsx'
+          - '*.ts'
+          - '*.css'
+          - '*.html'
+
+# Backend labels
+backend:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'server/**'
+          - 'api/**'
+          - '*.py'
+          - '*.js'
+
+# Docs labels
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '*.md'
+          - 'docs/**'
+
+# Workflows labels
+workflows:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/**'
+
+# Config labels
+config:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '*.json'
+          - '*.yaml'
+          - '*.yml'
+          - '.env*'
+
+# Bug labels
+bug:
+  - head-branch:
+      - '/^fix\/.*/'
+      - '/^bug\/.*/'
+
+# Feature labels
+feature:
+  - head-branch:
+      - '/^feat\/.*/'
+      - '/^feature\/.*/'
+
+# Dependencies labels
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'package.json'
+          - 'package-lock.json'
+          - 'requirements.txt'
+          - 'Pipfile'
