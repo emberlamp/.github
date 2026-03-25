@@ -3,8 +3,8 @@
 ✨ Fully automated software engineering organization with centralized control.
 
 [![Release](https://img.shields.io/github/v/release/emberlamp/general?include_prereleases&label=latest)](https://github.com/emberlamp/general/releases/latest)
-![Repositories](https://img.shields.io/github/repo-count/emberlamp?label=repos)
-![GitHub Org](https://img.shields.io/github/organizations/emberlamp?label=org)
+[![Workflows](https://img.shields.io/github/actions/workflow/status/emberlamp/general/ci.yml?label=CI)](https://github.com/emberlamp/general/actions)
+[![License](https://img.shields.io/github/license/emberlamp/general?label=license)](https://github.com/emberlamp/general)
 
 ## Overview
 
