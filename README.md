@@ -18,12 +18,12 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 
 | Category | Repos |
 |----------|-------|
-| Applications | general, hub |
+| Applications | general |
 | Templates | react-template, swe-agent |
 | CLI | cli, gh-pin-repo, config |
 | Automation | bot |
 | Resources | license, warnings, json-repo, gitkeep, skills |
-| Meta | .github |
+| Meta | .github, hub |
 
 ## Automated System
 
