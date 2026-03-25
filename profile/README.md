@@ -1,6 +1,6 @@
 # Emberlamp Organization
 
-🤖 Fully automated software engineering organization with centralized control.
+✨ Fully automated software engineering organization with centralized control.
 
 ## Overview
 
@@ -30,7 +30,7 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 
 ## Repositories (14)
 
-### Central Control
+### 🏛️ Central Control
 | Repo | Purpose |
 |------|---------|
 | [hub](https://github.com/emberlamp/hub) | Central hub with architecture |
@@ -39,23 +39,23 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 | [swe-agent](https://github.com/emberlamp/swe-agent) | Software engineering agent |
 | [bot](https://github.com/emberlamp/bot) | Automation workflows |
 
-### Applications
+### 📦 Applications
 | Repo | Purpose |
 |------|---------|
 | [general](https://github.com/emberlamp/general) | Main application |
 
-### Templates
+### 📋 Templates
 | Repo | Purpose |
 |------|---------|
 | [react-template](https://github.com/emberlamp/react-template) | React + Vite + TypeScript |
 
-### CLI Tools
+### 🛠️ CLI Tools
 | Repo | Purpose |
 |------|---------|
 | [cli](https://github.com/emberlamp/cli) | Master CLI for all repos |
 | [gh-pin-repo](https://github.com/emberlamp/gh-pin-repo) | CLI for pinning repos |
 
-### Resources
+### 📚 Resources
 | Repo | Purpose |
 |------|---------|
 | [license](https://github.com/emberlamp/license) | MIT License |
@@ -63,15 +63,15 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 | [json-repo](https://github.com/emberlamp/json-repo) | JSON schemas |
 | [gitkeep](https://github.com/emberlamp/gitkeep) | Placeholder |
 
-## Automated System
+## 🤖 Automated System
 
 Each repo has 3 workflows: **CI**, **Release**, **Automation**
 
-### Release Automation
+### 🚀 Release Automation
 - `feat:` commits → minor version bump
 - `fix:` commits → patch version bump
 
-## Quick Links
+## 🔗 Quick Links
 
 - [Hub](https://github.com/emberlamp/hub) - Start here
 - [Config](https://github.com/emberlamp/config) - Repository list
