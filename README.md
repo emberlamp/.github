@@ -101,14 +101,6 @@ All repos are defined in `config/repos.json`:
 | swe-agent | Agent that knows all repos, can clone to /tmp |
 | bot repo | Automation workflow for syncing/reporting |
 
-### Automated Workflows
-
-| Workflow | Trigger | Action |
-|----------|---------|--------|
-| CI | push to main | Lint & test |
-| Release | push to main | Auto version bump, create tag & release |
-| Automation | schedule/manual | Sync repos, backup, report |
-
 ### How It Works
 
 1. Add a repo → Update config/repos.json
