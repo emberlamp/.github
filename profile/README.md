@@ -4,7 +4,7 @@
 
 [![Release](https://img.shields.io/github/v/release/emberlamp/general?include_prereleases&label=latest)](https://github.com/emberlamp/general/releases/latest)
 [![CI](https://img.shields.io/github/actions/workflow/status/emberlamp/general/ci.yml?label=CI)](https://github.com/emberlamp/general/actions)
-[![Last Commit](https://img.shields.io/github/last-commit/emberlamp/general?label=last commit)](https://github.com/emberlamp/general/commits/main)
+[![Contributors](https://img.shields.io/github/contributors/emberlamp/general?label=contributors)](https://github.com/emberlamp/general/graphs/contributors)
 
 ## Overview
 
