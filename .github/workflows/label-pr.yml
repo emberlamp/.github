@@ -18,6 +18,7 @@ jobs:
       - name: Add repo-specific label
         run: |
           REPO_NAME="${{ github.event.repository.name }}"
+          gh label create "repo:$REPO_NAME" --repo "${{ github.repository }}" --force 2>/dev/null || true
           gh pr edit ${{ github.event.pull_request.number }} --add-label "repo:$REPO_NAME" --repo "${{ github.repository }}"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
