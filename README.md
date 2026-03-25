@@ -129,4 +129,4 @@ gh workflow run release.yml -f version=minor -R emberlamp/repo
 
 The entire emberlamp organization is now automated end-to-end!
 
-© 2026 Emberlamp
+© 2026 Emberlamptest
