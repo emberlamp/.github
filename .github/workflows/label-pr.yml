@@ -12,7 +12,7 @@ jobs:
         uses: actions/labeler@v5
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          configuration-path: .github/labeler.yml
+          configuration-path: labeler.yml
 
       - name: Add repo-specific label
         run: |
