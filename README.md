@@ -14,7 +14,7 @@ Emberlamp is a fully automated organization with 14 repositories managed through
 - **swe-agent** - Agent that knows all repos
 - **bot** - Automation workflow for syncing
 
-### Repositories (13)
+### Repositories (14)
 
 | Category | Repos |
 |----------|-------|
